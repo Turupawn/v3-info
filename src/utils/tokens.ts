@@ -1,5 +1,5 @@
 import { Token } from '@uniswap/sdk-core'
-import { CeloNetworkInfo, NetworkInfo, PolygonNetworkInfo } from 'constants/networks'
+import { CeloNetworkInfo, ScrollNetworkInfo, NetworkInfo, PolygonNetworkInfo } from 'constants/networks'
 import { CELO_ADDRESS, MATIC_ADDRESS, WETH_ADDRESSES } from '../constants'
 
 export interface SerializedToken {

@@ -3,6 +3,7 @@ import ARBITRUM_LOGO_URL from '../assets/images/arbitrum.svg'
 import ETHEREUM_LOGO_URL from '../assets/images/ethereum-logo.png'
 import POLYGON_LOGO_URL from '../assets/images/polygon-logo.png'
 import CELO_LOGO_URL from '../assets/images/celo-logo.svg'
+import SCROLL_LOGO_URL from '../assets/images/scroll-logo.svg'
 
 export enum SupportedNetwork {
   ETHEREUM,
@@ -10,6 +11,7 @@ export enum SupportedNetwork {
   OPTIMISM,
   POLYGON,
   CELO,
+  SCROLL,
 }
 
 export type NetworkInfo = {
@@ -74,10 +76,22 @@ export const CeloNetworkInfo: NetworkInfo = {
   blurb: '',
 }
 
+export const ScrollNetworkInfo: NetworkInfo = {
+  id: SupportedNetwork.SCROLL,
+  route: 'scroll',
+  name: 'Scroll',
+  bgColor: '#02502F',
+  primaryColor: '#35D07F',
+  secondaryColor: '#9ACDB2',
+  imageURL: SCROLL_LOGO_URL,
+  blurb: '',
+}
+
 export const SUPPORTED_NETWORK_VERSIONS: NetworkInfo[] = [
   EthereumNetworkInfo,
   PolygonNetworkInfo,
   OptimismNetworkInfo,
   ArbitrumNetworkInfo,
   CeloNetworkInfo,
+  ScrollNetworkInfo,
 ]

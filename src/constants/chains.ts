@@ -11,4 +11,6 @@ export enum SupportedChainId {
   OPTIMISTIC_KOVAN = 69,
 
   CELO = 42220,
+
+  SCROLL = 534354,
 }

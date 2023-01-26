@@ -5,7 +5,7 @@ import { Contract } from '@ethersproject/contracts'
 import { JsonRpcSigner, Web3Provider } from '@ethersproject/providers'
 import { Currency, CurrencyAmount, Fraction, Percent, Token } from '@uniswap/sdk-core'
 import { SupportedChainId } from 'constants/chains'
-import { ArbitrumNetworkInfo, CeloNetworkInfo, NetworkInfo, PolygonNetworkInfo } from 'constants/networks'
+import { ArbitrumNetworkInfo, CeloNetworkInfo, ScrollNetworkInfo, NetworkInfo, PolygonNetworkInfo } from 'constants/networks'
 import JSBI from 'jsbi'
 import { TokenAddressMap } from '../state/lists/hooks'
 import { OptimismNetworkInfo } from '../constants/networks'
@@ -40,6 +40,8 @@ export function getEtherscanLink(
       ? 'https://polygonscan.com/'
       : networkVersion === CeloNetworkInfo
       ? 'https://explorer.celo.org'
+      : networkVersion === ScrollNetworkInfo
+      ? 'https://l2scan.scroll.io/'
       : networkVersion === ArbitrumNetworkInfo
       ? 'https://arbiscan.io/'
       : networkVersion === OptimismNetworkInfo

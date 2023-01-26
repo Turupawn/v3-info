@@ -11,8 +11,9 @@ export const CELO_ADDRESS = '0x471EcE3750Da237f93B8E339c536989b8978a438'
 
 const WETH_ADDRESS = '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
 const ARBITRUM_WETH_ADDRESS = '0x82af49447d8a07e3bd95bd0d56f35241523fbab1'
+const SCROLL_WETH_ADDRESS = '0x6b29C65597Fa2aC80Ab181989969092971f1Fa4e'
 
-export const WETH_ADDRESSES = [WETH_ADDRESS, ARBITRUM_WETH_ADDRESS]
+export const WETH_ADDRESSES = [WETH_ADDRESS, ARBITRUM_WETH_ADDRESS, SCROLL_WETH_ADDRESS]
 
 export const TOKEN_HIDE: { [key: string]: string[] } = {
   [SupportedNetwork.ETHEREUM]: [
@@ -25,6 +26,7 @@ export const TOKEN_HIDE: { [key: string]: string[] } = {
   [SupportedNetwork.ARBITRUM]: [],
   [SupportedNetwork.OPTIMISM]: [],
   [SupportedNetwork.CELO]: [],
+  [SupportedNetwork.SCROLL]: [],
 }
 
 export const POOL_HIDE: { [key: string]: string[] } = {
@@ -41,6 +43,7 @@ export const POOL_HIDE: { [key: string]: string[] } = {
   [SupportedNetwork.ARBITRUM]: [],
   [SupportedNetwork.OPTIMISM]: [],
   [SupportedNetwork.CELO]: [],
+  [SupportedNetwork.SCROLL]: [],
 }
 export interface WalletInfo {
   connector?: AbstractConnector
