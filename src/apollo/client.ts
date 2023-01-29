@@ -221,7 +221,7 @@ export const celoBlockClient = new ApolloClient({
 })
 
 export const scrollClient = new ApolloClient({
-  uri: 'http://50.112.248.26:8000/subgraphs/name/turupawn/uniswap-v3',
+  uri: 'https://uni.dgh.works/subgraphs/name/turupawn/uniswap-v3',
   cache: new InMemoryCache({
     typePolicies: {
       Token: {
@@ -249,7 +249,7 @@ export const scrollClient = new ApolloClient({
 })
 
 export const scrollBlockClient = new ApolloClient({
-  uri: 'http://50.112.248.26:8000/subgraphs/name/turupawn/blocks',
+  uri: 'https://uni.dgh.works/subgraphs/name/turupawn/blocks',
   cache: new InMemoryCache(),
   queryDeduplication: true,
   defaultOptions: {
