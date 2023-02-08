@@ -80,18 +80,18 @@ export const ScrollNetworkInfo: NetworkInfo = {
   id: SupportedNetwork.SCROLL,
   route: 'scroll',
   name: 'Scroll',
-  bgColor: '#02502F',
-  primaryColor: '#35D07F',
-  secondaryColor: '#9ACDB2',
+  bgColor: '#faf9fa',
+  primaryColor: '#F18740',
+  secondaryColor: '#595959',
   imageURL: SCROLL_LOGO_URL,
   blurb: '',
 }
 
 export const SUPPORTED_NETWORK_VERSIONS: NetworkInfo[] = [
-  EthereumNetworkInfo,
-  PolygonNetworkInfo,
-  OptimismNetworkInfo,
-  ArbitrumNetworkInfo,
-  CeloNetworkInfo,
+  // EthereumNetworkInfo,
+  // PolygonNetworkInfo,
+  // OptimismNetworkInfo,
+  // ArbitrumNetworkInfo,
+  // CeloNetworkInfo,
   ScrollNetworkInfo,
 ]
